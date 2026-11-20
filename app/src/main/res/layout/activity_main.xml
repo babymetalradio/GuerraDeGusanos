@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_light">
+
+    <!-- ==================== PANTALLA DE MENÚ ==================== -->
+    <ScrollView
+        android:id="@+id/menuScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_title"
+                android:textColor="@color/text_dark"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/menu_subtitle"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_label"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnModeCpu"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/mode_cpu" />
+
+                <Button
+                    android:id="@+id/btnMode2p"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/mode_2p" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/worms_label"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnWorms2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/worms_2" />
+
+                <Button
+                    android:id="@+id/btnWorms3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/worms_3" />
+
+                <Button
+                    android:id="@+id/btnWorms4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/worms_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/difficultyRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difficulty_label"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnDiffEasy"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:text="@string/diff_easy" />
+
+                    <Button
+                        android:id="@+id/btnDiffNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:layout_weight="1"
+                        android:text="@string/diff_normal" />
+
+                    <Button
+                        android:id="@+id/btnDiffHard"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:text="@string/diff_hard" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/color_accent"
+                android:text="@string/play"
+                android:textColor="@color/text_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/how_title"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Tarjeta: moverse -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/card"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_move_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_move_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Tarjeta: apuntar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/card"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_aim_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_aim_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Tarjeta: viento y agua -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/card"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_wind_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_wind_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ==================== PANTALLA DE JUEGO ==================== -->
+    <LinearLayout
+        android:id="@+id/gameScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Barra superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnBackMenu"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/back_to_menu"
+                android:text="←"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/menu_title"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnFullscreen"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/fullscreen"
+                android:text="⛶"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/restart"
+                android:text="↺"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSound"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/sound_on"
+                android:text="🔊"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- HUD: HP de equipos y turno -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/hpRedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/team_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/hpRedBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:max="300"
+                android:progress="300"
+                android:progressBackgroundTint="@color/card"
+                android:progressTint="@color/team_red" />
+
+            <TextView
+                android:id="@+id/turnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/hpBlueBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:max="300"
+                android:progress="300"
+                android:progressBackgroundTint="@color/card"
+                android:progressTint="@color/team_blue" />
+
+            <TextView
+                android:id="@+id/hpBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/team_blue_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- HUD: tiempo, viento y estado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/windText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/status_default"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Campo de juego -->
+        <com.guerradegusanos.app.ui.GameView
+            android:id="@+id/gameView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/sky" />
+
+        <!-- Controles táctiles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="56dp"
+                android:layout_height="52dp"
+                android:contentDescription="@string/move_left"
+                android:text="◀"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="56dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/move_right"
+                android:text="▶"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnJump"
+                android:layout_width="56dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/jump"
+                android:text="⤒"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAimUp"
+                android:layout_width="48dp"
+                android:layout_height="52dp"
+                android:contentDescription="@string/aim_up"
+                android:text="▲"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAimDown"
+                android:layout_width="48dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/aim_down"
+                android:text="▼"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnWeaponBazooka"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/weapon_bazooka"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnWeaponGrenade"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/weapon_grenade"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnWeaponDynamite"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/weapon_dynamite"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnFire"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/fire"
+                android:text="@string/fire"
+                android:textColor="@color/text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

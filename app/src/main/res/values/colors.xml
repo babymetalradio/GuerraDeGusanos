@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Equipos -->
+    <color name="team_red">#E2483D</color>
+    <color name="team_red_dark">#B73228</color>
+    <color name="team_blue">#4A90E2</color>
+    <color name="team_blue_dark">#2F6FC4</color>
+
+    <!-- Mundo -->
+    <color name="sky">#8ED0F0</color>
+    <color name="sky_light">#A8D8EA</color>
+    <color name="grass">#58B368</color>
+    <color name="grass_dark">#3E8E4D</color>
+    <color name="ground">#8B5A2B</color>
+    <color name="water">#2E86C1</color>
+
+    <!-- Tema -->
+    <color name="color_primary">#4A90E2</color>
+    <color name="color_primary_dark">#2F6FC4</color>
+    <color name="color_accent">#FF8C42</color>
+    <color name="fire">#E2483D</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text_dark">#263238</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="button_default">#E3EAF2</color>
+    <color name="button_selected_text">#FFFFFF</color>
+</resources>
